@@ -403,6 +403,8 @@ body {
 .centered {
     text-align: center;
     width: 100%;
+    position: relative;
+    bottom: 30px;
 }
 
 #logo
@@ -460,32 +462,35 @@ body {
 }
 
 footer {
-    position: relative;
-    top: 250px;
+    position: fixed;
+    top: 770px;
     background: #f2f2f2;
     border-top: 1px solid #e4e4e4;
     line-height: 40px;
     min-width: 980px;
     height: 100px;
     display: block;
+    width: 100%;
 }
 
 footer li {
     list-style-type: none;
+    font-family: arial,sans-serif;
+    opacity: 0.54;
 }
 
-.footer-list-one
-{
+.footer-list-one {
     display: inline-flex;
     float: left;
     border-bottom: 1px solid #e4e4e4;
     padding-left: 25px;
+    width: 100%;
+    font-size: 100%;
 }
 
-.footer-list-two
-{
-    margin-top: 0px;
-    padding: 0px;
+.footer-list-two {   
+    width: 100%;
+    font-size: small;
 }
 
 .footer-item-left {
@@ -500,4 +505,9 @@ footer li {
     float: right;
     width: auto;
     padding-right: 25px;
+}
+
+.align-left {
+    position: relative;
+    left: 25px;
 }
